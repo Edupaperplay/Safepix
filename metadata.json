@@ -1,0 +1,6 @@
+{
+  "name": "Temporary Image Sharing Portal",
+  "description": "A secure, temporary, encrypted image sharing application with PIN protection, auto-delete timers, comments, and administrative logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

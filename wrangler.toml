@@ -1,0 +1,14 @@
+name = "safepix"
+main = "worker.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = "./dist"
+
+[[kv_namespaces]]
+binding = "ACTIVE_SHARES"
+id = "ACTIVE_SHARES_ID"
+
+[vars]
+# Add your environment variables here
