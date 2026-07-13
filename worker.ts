@@ -825,7 +825,7 @@ app.post('/api/admin/logs', async (c) => {
     const { passcode } = await c.req.json();
     const kv = c.env.ACTIVE_SHARES;
     const clientIp = getClientIp(c);
-    const ADMIN_PASSCODE = "admin123";
+    const ADMIN_PASSCODE = "!Prototype@123#";
 
     if (!passcode || passcode !== ADMIN_PASSCODE) {
       await addSystemLog(kv, "ADMIN_LOGIN_FAILED", clientIp, "Attempted unauthorized access to Admin Terminal.");
@@ -861,7 +861,7 @@ app.post('/api/admin/clean-copy', async (c) => {
   try {
     const { passcode, shareId, imageId } = await c.req.json();
     const kv = c.env.ACTIVE_SHARES;
-    const ADMIN_PASSCODE = "admin123";
+    const ADMIN_PASSCODE = "!Prototype@123#";
 
     if (!passcode || passcode !== ADMIN_PASSCODE) {
       return c.json({ error: "Unauthorized." }, 403);
@@ -906,7 +906,7 @@ app.post('/api/admin/delete/:id', async (c) => {
     const { passcode } = await c.req.json();
     const kv = c.env.ACTIVE_SHARES;
     const clientIp = getClientIp(c);
-    const ADMIN_PASSCODE = "admin123";
+    const ADMIN_PASSCODE = "!Prototype@123#";
 
     if (!passcode || passcode !== ADMIN_PASSCODE) {
       await addSystemLog(kv, "ADMIN_ACTION_FAILED", clientIp, `Unauthorized force-delete attempt on share: ${id}`);
@@ -931,7 +931,7 @@ app.post('/api/admin/block-ip', async (c) => {
     const { passcode, ip } = await c.req.json();
     const kv = c.env.ACTIVE_SHARES;
     const clientIp = getClientIp(c);
-    const ADMIN_PASSCODE = "admin123";
+    const ADMIN_PASSCODE = "!Prototype@123#";
 
     if (!passcode || passcode !== ADMIN_PASSCODE) {
       await addSystemLog(kv, "ADMIN_ACTION_FAILED", clientIp, `Unauthorized attempt to block IP: ${ip}`);
@@ -966,7 +966,7 @@ app.post('/api/admin/unblock-ip', async (c) => {
     const { passcode, ip } = await c.req.json();
     const kv = c.env.ACTIVE_SHARES;
     const clientIp = getClientIp(c);
-    const ADMIN_PASSCODE = "admin123";
+    const ADMIN_PASSCODE = "!Prototype@123#";
 
     if (!passcode || passcode !== ADMIN_PASSCODE) {
       await addSystemLog(kv, "ADMIN_ACTION_FAILED", clientIp, `Unauthorized attempt to unblock IP: ${ip}`);
