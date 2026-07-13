@@ -1,5 +1,5 @@
 {
-  "name": "Temporary Image Sharing Portal",
+  "name": "SafePix - Secure image sharing with self-destruct timer",
   "description": "A secure, temporary, encrypted image sharing application with PIN protection, auto-delete timers, comments, and administrative logging.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
