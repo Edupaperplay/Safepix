@@ -8,7 +8,7 @@ bucket = "./dist"
 
 [[kv_namespaces]]
 binding = "ACTIVE_SHARES"
-id = "ACTIVE_SHARES_ID"
+id = "f896ee75b30c4d3fa8ef0e033413c172"
 
 [vars]
 # Add your environment variables here
