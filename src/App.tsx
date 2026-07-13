@@ -1630,9 +1630,7 @@ export default function App() {
                       Authorize Terminal
                     </button>
                   </form>
-                  <p className="text-[10px] text-slate-400 text-center mt-4">
-                    Default Passcode is <code className="bg-slate-100 text-slate-600 px-1 rounded font-mono">admin123</code> unless configured in secrets.
-                  </p>
+                  
                 </div>
               ) : (
                 /* Admin Dashboard Terminal view */
